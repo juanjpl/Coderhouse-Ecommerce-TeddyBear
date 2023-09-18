@@ -27,6 +27,22 @@ const App = () => {
     getBears();
   }, []);
 
+  /*
+    <>
+      <h1>Teddy Bears Shop</h1>
+      <div className="grid">
+      {bears.map((bear)=>{
+        return(
+          <div key={bear.id}>
+            <CardUser data={bear}/>
+          </div>
+        )
+      })}
+      </div>
+     
+    </>
+  */
+
   return (
     <>
       <h1>Teddy Bears Shop</h1>
