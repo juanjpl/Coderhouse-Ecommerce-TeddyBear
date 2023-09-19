@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --background-color-brown:#8f5d32;
+    --font-Rajdhani: 'Rajdhani', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.hero-home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/cute-teddy-bear-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

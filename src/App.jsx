@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CardUser from "./components/CardUser.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import HeroHome from "./components/HeroHome/HeroHome.jsx";
 import "./App.css";
 
 //Firebase
@@ -47,7 +48,7 @@ const App = () => {
   return (
     <>
     <Navbar/>
-  
+  <HeroHome/>
     
      
     </>

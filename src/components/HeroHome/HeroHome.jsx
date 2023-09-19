@@ -1,10 +1,12 @@
 import   './styles.css';
 
 
-const Hero =()=>{
+const HeroHome =()=>{
     return(
-        <div>
+        <div className='hero-home'>
             <h2>hola. soy el hero!</h2>
         </div>
     )
 }
+
+export default HeroHome;
