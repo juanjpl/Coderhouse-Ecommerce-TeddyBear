@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CardUser from "./components/CardUser.jsx";
+import SocialNav from "./components/SocialNav/SocialNav.jsx";
 import "./App.css";
 
 //Firebase
@@ -44,9 +45,10 @@ const App = () => {
   */
 
   return (
-    <>
-      <h1>Teddy Bears Shop</h1>
-      <div className="grid">
+    <div className="contenedor-app">
+    
+<SocialNav/>
+   <div className="grid">
       {bears.map((bear)=>{
         return(
           <div key={bear.id}>
@@ -56,7 +58,7 @@ const App = () => {
       })}
       </div>
      
-    </>
+    </div>
   );
 };
 

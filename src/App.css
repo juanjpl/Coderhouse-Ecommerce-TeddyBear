@@ -1,8 +1,10 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.contenedor-app{
+background-color: aquamarine;
+margin: 0 auto;
+text-align: center;
+width: 100vw;
+height: 100vh;
 }
 
 .grid{
@@ -10,5 +12,5 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+
 }

@@ -1,12 +1,11 @@
 import styles from './styles.css';
 
-
-const Navbar =()=>{
-    return(
-        <div>
-            <h1>Navbar</h1>
-        </div>
-    )
+const  NavBar = ()=> {
+  
+  return(
+    <div>
+      <h4>navbar</h4>
+    </div>
+  )
 }
-
-export default Navbar;
+export default NavBar;
