@@ -13,9 +13,54 @@
 
 .hero-home{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
+   margin-top:5rem;
     background-image: url('./assets/cute-teddy-bear-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  
+
+}
+
+.texto-hero{
+ 
+    width: 30%;
+    height: 50%;
+    margin:auto 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-hero>h1{
+    font-weight: 800;
+    font-size: 90px;
+    color: #ffffff;
+    font-family: var(--font-Rajdhani);
+    text-align: left;
+}
+
+.texto-hero>h2{
+    font-size: 18px;
+    font-family: var(--font-Rajdhani);
+    color: #000000;
+    text-align: left;
+    line-height: 30px;
+    margin:2em auto;
+}
+
+.texto-hero>a{
+    text-decoration: none;
+    color:#ffffff;
+    border-radius: 9999px;
+    padding:1em;
+    width: 40%;
+    margin:1em auto;
+    font-size: 20px;
+    font-weight: 800;
+background-color: var(--background-color-brown);
 }

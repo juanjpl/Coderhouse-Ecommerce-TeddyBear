@@ -11,7 +11,8 @@
 background-color: #ffffff;
     width: 100vw;
     height:max-content;
-    position: fixed;
+    position:fixed;    
+    top:0;
     border:1px solid black;
  
 }
