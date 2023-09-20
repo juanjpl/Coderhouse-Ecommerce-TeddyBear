@@ -8,9 +8,13 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="barra-social">
         <div className="icons-redes">
-          <img src={facebook} alt="facebook-icon" />
-          <img src={facebook} alt="instagram-icon" />
-          <img src={facebook} alt="twitter-icon" />
+   <i class="fa-brands fa-square-x-twitter"></i>
+       
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
         </div>
         <div className="icons-texto">
           <h2>FREE WORLDWIDE SHIPPING & DISCOUNT UP TO 40% OFF</h2>

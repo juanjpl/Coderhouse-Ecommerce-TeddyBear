@@ -28,9 +28,9 @@
 
 .texto-hero{
  
-    width: 30%;
+    width: 35%;
     height: 50%;
-    margin:auto 8em;
+    margin:auto 10em;
     display: flex;
     flex-direction: column;
     justify-content: center;

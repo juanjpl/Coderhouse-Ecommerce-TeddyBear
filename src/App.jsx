@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CardUser from "./components/CardUser.jsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import HeroHome from "./components/HeroHome/HeroHome.jsx";
 import BannerOne from "./components/BannerOne/BannerOne.jsx";
@@ -52,18 +53,7 @@ const App = () => {
     <Navbar/>
   <HeroHome/>
     <BannerOne/>
-  
-    <div className="container-cards">
-    <div className="grid">
-      {bears.map((bear)=>{
-        return(
-          <div key={bear.id}>
-            <CardUser data={bear}/>
-          </div>
-        )
-      })}
-      </div>
-    </div>
+    <ItemListContainer data={bears}/>
     <Footer/>
     </div>
   );
