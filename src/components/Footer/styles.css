@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --background-color-brown:#8f5d32;
+    --font-Rajdhani: 'Rajdhani', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-Rajdhani);
+}
+
+.footer{
+    width: 100vw;
+    height: max-content;
+    background-color:#56423e;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-footer{
+    width: 80%;
+    height: max-content;
+border: 1px solid  black;
+    display: flex;
+    flex-direction: row;
+    margin:1em auto;
+
+}
+
+.option{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.container-footer>.option>h2{
+    color:#ffffff;
+}
+
+
+.direction{
+    display: flex;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+}
+
+
+
+.direction>i{
+    color:#8f5d32;
+ font-size: 30px;
+ border: 1px solid black;
+ width: 40px;
+ height: 40px;
+ margin-right: 1em;
+}
+
+.direction>h3{
+    color:#ffffff;
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    line-height: 1.4;
+    border: 1px solid black;
+
+}
+
+.option>h3{
+ color: #959fa7;
+ font-size: 14px;
+ font-family: "Open Sans",sans-serif;
+ font-weight: 300;
+
+}
+
+.option>a{
+    color:#ffffff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    margin:0.5em 0;
+}
+
+.option>a:hover{
+    color:#8f5d32;
+
+}
+
+.copyright{
+    background-color: black;
+    color:#ffffff;
+    height: 50px;
+}
+
+.copyright>h2{
+    margin:0.5em;
+    font-size: 18px;
+}

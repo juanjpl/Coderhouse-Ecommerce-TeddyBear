@@ -3,6 +3,7 @@ import CardUser from "./components/CardUser.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import HeroHome from "./components/HeroHome/HeroHome.jsx";
 import BannerOne from "./components/BannerOne/BannerOne.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
 //Firebase
@@ -51,6 +52,7 @@ const App = () => {
     <Navbar/>
   <HeroHome/>
     <BannerOne/>
+    <Footer/>
      
     </>
   );
