@@ -9,10 +9,48 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: var(--font-Rajdhani);
 }
 
 .banner-one{
     width: 100vw;
     height: 20vh;
     background-color:#f5f5f5 ;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.option-shop{
+    width: 80%;
+    height: max-content;
+border: 1px solid  black;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.option{
+    width: 25%;
+}
+
+.option>i{
+    color:#8f5d32;
+ font-size: 45px;
+}
+
+.option>h2{
+    color:#333333;
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.option>h3{
+ color: #959fa7;
+ font-size: 14px;
+ font-family: "Open Sans",sans-serif;
+ font-weight: 300;
+
 }
