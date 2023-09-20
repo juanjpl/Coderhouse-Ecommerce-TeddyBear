@@ -79,6 +79,11 @@ vertical-align: middle;
     flex-direction: column;
 }
 
+.links-nav{
+    flex-direction: row;
+    justify-content: end;
+}
+
 .links-nav>nav{
     border:1px solid black;
  margin: auto 0;

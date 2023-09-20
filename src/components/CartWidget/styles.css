@@ -7,20 +7,31 @@
 }
 
 
-.navbar-container{
-    background-color: var(--background-color-brown);
-    width: 100vw;
-    height: 100px;
-    border: 1px solid black;
+.container-widget{
+border: 1px solid black;
+margin-left: 1em;
 }
 
-.icons-redes>img{
-    color:#ffffff;
-    width:50px;
+.container-widget>i{
+    margin:10px auto;
+    transition: all 0.5s ease-in-out;
+    font-size: 40px;
 }
 
-.icons-texto{
-    font-family: var(--font-Rajdhani);
-    color:#ffffff;
-    font-size: 12px;
+.container-widget>i:hover{
+    color: var(--background-color-brown);
+}
+
+.container-widget>h2{
+   color: white;
+   border: 1px solid red;
+   background-color: red;
+   width: 30px;
+   height:30px;
+   border-radius: 50%;
+   font-size: 18px;
+   position: relative;
+   margin: auto;
+   top:-50px;
+   right: -20px;
 }

@@ -48,13 +48,24 @@ const App = () => {
   */
 
   return (
-    <>
+    <div className="container-app">
     <Navbar/>
   <HeroHome/>
     <BannerOne/>
+  
+    <div className="container-cards">
+    <div className="grid">
+      {bears.map((bear)=>{
+        return(
+          <div key={bear.id}>
+            <CardUser data={bear}/>
+          </div>
+        )
+      })}
+      </div>
+    </div>
     <Footer/>
-     
-    </>
+    </div>
   );
 };
 

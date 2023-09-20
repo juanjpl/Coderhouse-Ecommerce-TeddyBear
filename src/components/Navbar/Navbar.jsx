@@ -1,6 +1,7 @@
 import   './styles.css';
 import facebook from "./assets/social-icons/facebook.png";
 import logoteddy from './assets/logo-teddy.png';
+import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = () => {
   return (
@@ -37,6 +38,7 @@ const Navbar = () => {
 
                 </ul>
             </nav>
+            <CartWidget/>
         </div>
       </div>
     
