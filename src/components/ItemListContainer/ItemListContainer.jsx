@@ -1,5 +1,5 @@
 import "./styles.css";
-import CardUser from "../CardUser";
+import Item from '../Item/Item.jsx';
 import { useState , useEffect } from "react";
 import Spinner from "../Spinner/Spinner";
 
@@ -8,13 +8,13 @@ const ItemListContainer = ({ data }) => {
 
 
 
-  console.log(data);
+
 
   useEffect(() => {
    
     setTimeout(() => {
       setloading(false);
-    }, "2000");
+    }, 3000);
   });
   return (
     <div className="container-item-list">
@@ -27,7 +27,7 @@ const ItemListContainer = ({ data }) => {
             {data.map((bear) => {
               return (
                 <div key={bear.id}>
-                  <CardUser data={bear} />
+                  <Item data={bear} />
                 </div>
               );
             })}

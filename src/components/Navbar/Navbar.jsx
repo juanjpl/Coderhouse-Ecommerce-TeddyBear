@@ -37,7 +37,7 @@ const Navbar = () => {
                   <Link className='li' to='/shop'>
                     SHOP
                   </Link>
-                  <Link className='li' to='/shop'>
+                  <Link className='li' to='/contact'>
                     CONTACT
                   </Link>
                  
