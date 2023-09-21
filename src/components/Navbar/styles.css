@@ -135,3 +135,32 @@ vertical-align: middle;
     text-align: left;
     margin: auto 0;
 }
+
+
+.barra-categories{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links-categories{
+    display: flex;
+    padding:0.5em;
+}
+
+.links-categories>a{
+   color:black;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 800;
+   margin:auto 2em;
+   padding:0.5rem 1rem;
+   transition: all 0.5s ease-in-out;
+}
+
+.links-categories>a:hover{
+    color:white;
+background-color: #a97c54;
+ }
+

@@ -45,6 +45,16 @@ const Navbar = () => {
             <CartWidget/>
         </div>
       </div>
+      <div className="barra-categories">
+     
+
+<div className="links-categories">
+  <a href="">BOYS</a>
+  <a href="">ALL</a>
+  <a href="">GIRLS</a>
+</div>
+       
+      </div>
     
     </div>
   );

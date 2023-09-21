@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
-import CardUser from "./components/CardUser.jsx";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from './views/HomePage/HomePage.jsx';
+import AboutPage  from './views/AboutPage/AboutPage.jsx';
+import CartPage from './views/CartPage/CartPage.jsx';
+import CategoryPage from './views/CategoryPage/CategoryPage.jsx';
+import ContactPage from './views/ContactPage/ContactPage.jsx';
+import ItemPage from './views/ItemPage/ItemPage.jsx';
+import ShopPage from './views/ShopPage/ShopPage.jsx';
 import Navbar from "./components/Navbar/Navbar.jsx";
-import HeroHome from "./components/HeroHome/HeroHome.jsx";
-import BannerOne from "./components/BannerOne/BannerOne.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Footer from './components/Footer/Footer.jsx';
 import "./App.css";
 
 //Firebase
@@ -30,32 +34,29 @@ const App = () => {
     };
 
     getBears();
+    
   }, []);
 
-  /*
-    <>
-      <h1>Teddy Bears Shop</h1>
-      <div className="grid">
-      {bears.map((bear)=>{
-        return(
-          <div key={bear.id}>
-            <CardUser data={bear}/>
-          </div>
-        )
-      })}
-      </div>
-     
-    </>
-  */
+ 
 
   return (
+    <Router>
+
+    
     <div className="container-app">
     <Navbar/>
-  <HeroHome/>
-    <BannerOne/>
-    <ItemListContainer data={bears}/>
-    <Footer/>
+    <Routes>
+      <Route path='/' element={<HomePage data={bears} />} />
+      <Route path='/about' element={<AboutPage/>} />
+      <Route path='/cart' element={<CartPage/>} />
+      <Route path='/categories' element={<CategoryPage/>} />
+      <Route path='/contact' element={<ContactPage/>} />
+      <Route path='/item/:id' element={<ItemPage/>} />
+      <Route path='/shop' element={<ShopPage/>} />
+    </Routes>
+    <Footer />
     </div>
+    </Router>
   );
 };
 
