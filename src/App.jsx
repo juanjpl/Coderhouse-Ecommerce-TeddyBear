@@ -47,12 +47,14 @@ const App = () => {
     <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage data={bears} />} />
+      <Route path='/home' element={<HomePage data={bears} />} />
       <Route path='/about' element={<AboutPage/>} />
       <Route path='/cart' element={<CartPage/>} />
       <Route path='/categories' element={<CategoryPage/>} />
       <Route path='/contact' element={<ContactPage/>} />
       <Route path='/item/:id' element={<ItemPage/>} />
       <Route path='/shop' element={<ShopPage/>} />
+      <Route path='/*' element={<HomePage data={bears} />} />
     </Routes>
     <Footer />
     </div>

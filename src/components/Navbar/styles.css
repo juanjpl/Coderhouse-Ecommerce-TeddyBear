@@ -108,24 +108,22 @@ vertical-align: middle;
     justify-content: end;
 }
 
-.links-nav>nav>ul>li{
+.links-nav>nav>ul>.li{
     margin:0 1em;
     list-style: none;
+    text-decoration: none;
+    color:black;
+    font-family: var(--font-Rajdhani);
+    font-size: 20px;
+    font-weight: 600;
+       letter-spacing: 1.4px;
+       text-transform: uppercase;
+       transition: all 0.5s ease-in-out;
 
 }
 
-.links-nav>nav>ul>li>a{
- text-decoration: none;
- color:black;
- font-family: var(--font-Rajdhani);
- font-size: 20px;
- font-weight: 600;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    transition: all 0.5s ease-in-out;
-}
 
-.links-nav>nav>ul>li>a:hover{
+.links-nav>nav>ul>.li:hover{
   color: var(--background-color-brown)
        
    }

@@ -1,5 +1,6 @@
 import   './styles.css';
-import facebook from "./assets/social-icons/facebook.png";
+import { Link } from 'react-router-dom';
+
 import logoteddy from './assets/logo-teddy.png';
 import CartWidget from '../CartWidget/CartWidget';
 
@@ -27,18 +28,19 @@ const Navbar = () => {
         <div className='links-nav'>
             <nav>
                 <ul>
-                    <li>
-                        <a href="/homepage">HOMEPAGE</a>
-                    </li>
-                    <li>
-                        <a href="/homepage">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="/homepage">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="/homepage">CONTACT</a>
-                    </li>
+                  <Link className='li' to='/'>
+                    HOMEPAGE
+                  </Link>
+                  <Link className='li' to='/about'>
+                    ABOUT
+                  </Link>
+                  <Link className='li' to='/shop'>
+                    SHOP
+                  </Link>
+                  <Link className='li' to='/shop'>
+                    CONTACT
+                  </Link>
+                 
 
                 </ul>
             </nav>
@@ -49,9 +51,9 @@ const Navbar = () => {
      
 
 <div className="links-categories">
-  <a href="">BOYS</a>
-  <a href="">ALL</a>
-  <a href="">GIRLS</a>
+  <a href="/categories/:boys">BOYS</a>
+  <a href="/categories/:all">ALL</a>
+  <a href="/categories/:girls">GIRLS</a>
 </div>
        
       </div>
