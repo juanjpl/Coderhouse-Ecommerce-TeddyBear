@@ -1,4 +1,4 @@
-import styles from "./styles.css";
+import   './styles.css';
 import HeroHome from '../../components/HeroHome/HeroHome.jsx';
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer.jsx';
 import BannerOne from '../../components/BannerOne/BannerOne.jsx';
