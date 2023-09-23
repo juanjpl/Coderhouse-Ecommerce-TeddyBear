@@ -1,8 +1,8 @@
 import "./styles.css";
-import Item from "../Item/Item.jsx";
+import Items from "../Items/Items.jsx";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../Spinner/Spinner.jsx";
 
 const ItemListContainer = ({ data }) => {
   const [loading, setloading] = useState(true);
@@ -23,8 +23,8 @@ const ItemListContainer = ({ data }) => {
             {data.map((bear) => {
               return (
                 <div key={bear.id}>
-                  <Link to={`/item/${bear.id} `}>
-                    <Item data={bear} />
+                  <Link className="style-links" to={`/item/${bear.id} `}>
+                    <Items data={bear} />
                   </Link>
                 </div>
               );

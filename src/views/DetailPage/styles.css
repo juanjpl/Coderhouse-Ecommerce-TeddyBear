@@ -8,8 +8,7 @@
 
 .container-detail{
 width: 100vw;
-height: 90vh;
-background-color: rgb(212, 162, 34);
+height: 95vh;
 display: flex;
 flex-direction: column;
 justify-content: center;

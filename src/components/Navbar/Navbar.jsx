@@ -1,21 +1,21 @@
-import   './styles.css';
-import { Link } from 'react-router-dom';
+import "./styles.css";
+import { Link } from "react-router-dom";
 
-import logoteddy from './assets/logo-teddy.png';
-import CartWidget from '../CartWidget/CartWidget';
+import logoteddy from "./assets/logo-teddy.png";
+import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="barra-social">
         <div className="icons-redes">
-   <i className="fa-brands fa-square-x-twitter"></i>
-       
-        <i className="fa-brands fa-instagram"></i>
-        <i className="fa-brands fa-pinterest-p"></i>
-        <i className="fa-brands fa-facebook-f"></i>
-        <i className="fa-brands fa-youtube"></i>
-        <i className="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-square-x-twitter"></i>
+
+          <i className="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-pinterest-p"></i>
+          <i className="fa-brands fa-facebook-f"></i>
+          <i className="fa-brands fa-youtube"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </div>
         <div className="icons-texto">
           <h2>FREE WORLDWIDE SHIPPING & DISCOUNT UP TO 40% OFF</h2>
@@ -23,41 +23,35 @@ const Navbar = () => {
       </div>
       <div className="navbar">
         <div className="logo-teddy">
-            <img src={logoteddy} alt="logo-teddy" />
+          <img src={logoteddy} alt="logo-teddy" />
         </div>
-        <div className='links-nav'>
-            <nav>
-                <ul>
-                  <Link className='li' to='/'>
-                    HOMEPAGE
-                  </Link>
-                  <Link className='li' to='/about'>
-                    ABOUT
-                  </Link>
-                  <Link className='li' to='/shop'>
-                    SHOP
-                  </Link>
-                  <Link className='li' to='/contact'>
-                    CONTACT
-                  </Link>
-                 
-
-                </ul>
-            </nav>
-            <CartWidget/>
+        <div className="links-nav">
+          <nav>
+            <ul>
+              <Link className="li" to="/">
+                HOMEPAGE
+              </Link>
+              <Link className="li" to="/about">
+                ABOUT
+              </Link>
+              <Link className="li" to="/shop">
+                SHOP
+              </Link>
+              <Link className="li" to="/contact">
+                CONTACT
+              </Link>
+            </ul>
+          </nav>
+          <CartWidget />
         </div>
       </div>
       <div className="barra-categories">
-     
-
-<div className="links-categories">
-  <a href="/categories/:boys">BOYS</a>
-  <a href="/categories/:all">ALL</a>
-  <a href="/categories/:girls">GIRLS</a>
-</div>
-       
+        <div className="links-categories">
+          <a href="/category/Boy">BOYS</a>
+          <a href="/category/All">ALL</a>
+          <a href="/category/Girl">GIRLS</a>
+        </div>
       </div>
-    
     </div>
   );
 };

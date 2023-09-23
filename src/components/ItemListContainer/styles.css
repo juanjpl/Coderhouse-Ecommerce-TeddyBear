@@ -1,26 +1,22 @@
-
-
-.container-item-list{
-display: flex;
-flex-direction: column;
-margin: 3em auto;
+.container-item-list {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
 }
 
-.container-item-list>h2{
-   font-size: 60px;
-   margin: 1em;
-    }
+.container-item-list > h2 {
+  font-size: 60px;
+  margin: 1em;
+}
 
+.grid {
+  width: max-content;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
 
+.style-links{
 
-.grid{
-    width: max-content;
-    margin: auto;
-    border: 1px solid black;
-    display: grid;
-    gap: 20px;
- 
-
-
-  
-  }
+  text-decoration: none;
+}

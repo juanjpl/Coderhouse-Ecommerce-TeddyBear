@@ -1,11 +1,11 @@
 import './styles.css';
+import ItemDetail from '../ItemDetail/ItemDetail.jsx';
 
-
-const ItemDetailContainer =()=>{
+const ItemDetailContainer =({data})=>{
 
     return (
         <div className='container-item-detail'>
-            <h2>Hello. soy el checkout</h2>
+            <ItemDetail data={data} />
         </div>
     )
 }

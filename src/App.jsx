@@ -52,7 +52,7 @@ const App = () => {
       <Route path='/home' element={<HomePage data={bears} />} />
       <Route path='/about' element={<AboutPage/>} />
       <Route path='/cart' element={<CartPage/>} />
-      <Route path='/category/:id' element={<CategoryPage data={bears}/>} />
+      <Route path='/category/:category' element={<CategoryPage data={bears}/>} />
       <Route path='/contact' element={<ContactPage/>} />
       <Route path='/item/:id' element={<DetailPage data={bears}/>} />
       <Route path='/shop' element={<ShopPage data={bears}/>} />

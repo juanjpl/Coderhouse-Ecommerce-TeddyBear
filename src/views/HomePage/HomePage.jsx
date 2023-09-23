@@ -5,7 +5,7 @@ import BannerOne from '../../components/BannerOne/BannerOne.jsx';
 
 
 const HomePage = ({data}) => {
-    console.log(data)
+    //console.log(data)
   return (
     <div className="container-home">
       <HeroHome />

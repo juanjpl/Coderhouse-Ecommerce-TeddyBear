@@ -4,7 +4,10 @@ import './styles.css';
 const Spinner = ()=>{
 
     return(
-        <div className="loader">Loading...</div>
+        <div className='container-spinner'>
+<div className="loader">Loading...</div>
+        </div>
+        
     )
 }
 

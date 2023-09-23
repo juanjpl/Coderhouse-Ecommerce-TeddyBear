@@ -1,4 +1,12 @@
 
+
+.container-spinner{
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .loader {
   color: #8f5d32;
   font-size: 20px;
