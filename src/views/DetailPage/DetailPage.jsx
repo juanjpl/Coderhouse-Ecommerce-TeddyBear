@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import ItemDetailContainer from '../../components/ItemDetailContainer/ItemDetailContainer';
 
 
-const DetailPage =({data})=>{
+const DetailPage =({data , onAdd})=>{
 
     const bears = data;
     console.log(data);
@@ -16,7 +16,7 @@ const DetailPage =({data})=>{
 
     return(
         <div className='container-detail'>
-            <ItemDetailContainer data={result[0]}/>
+            <ItemDetailContainer data={result[0]} onAdd={onAdd}/>
         </div>
     )
 }

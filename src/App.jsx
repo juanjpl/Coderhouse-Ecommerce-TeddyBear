@@ -19,6 +19,20 @@ import { db } from "./firebase/firebaseConfig.js";
 
 const App = () => {
   const [bears,setBears] = useState([]);
+  const [cart,setCart] = useState(0);
+
+
+
+function onAdd(productos){
+
+  setCart(cart + productos);
+  console.log(`se agregaron ${productos} productos al carrito`)
+  
+}
+
+
+
+
   useEffect(() => {
    
     const getBears = async () => {
@@ -46,7 +60,7 @@ const App = () => {
 
     
     <div className="container-app">
-    <Navbar/>
+    <Navbar data={cart}/>
     <Routes>
       <Route path='/' element={<HomePage data={bears} />} />
       <Route path='/home' element={<HomePage data={bears} />} />
@@ -54,7 +68,7 @@ const App = () => {
       <Route path='/cart' element={<CartPage/>} />
       <Route path='/category/:category' element={<CategoryPage data={bears}/>} />
       <Route path='/contact' element={<ContactPage/>} />
-      <Route path='/item/:id' element={<DetailPage data={bears}/>} />
+      <Route path='/item/:id' element={<DetailPage data={bears} onAdd={onAdd}/>} />
       <Route path='/shop' element={<ShopPage data={bears}/>} />
       <Route path='/checkout' element={<Checkout/>} />
       <Route path='/*' element={<ErrorPage/>} />

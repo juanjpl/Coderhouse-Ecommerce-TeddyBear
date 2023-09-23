@@ -1,10 +1,13 @@
 import "./styles.css";
 import { Link } from "react-router-dom";
-
+import { useState, useEffect } from "react";
 import logoteddy from "./assets/logo-teddy.png";
 import CartWidget from "../CartWidget/CartWidget";
 
-const Navbar = () => {
+const Navbar = ({data}) => {
+
+
+
   return (
     <div className="navbar-container">
       <div className="barra-social">
@@ -42,7 +45,7 @@ const Navbar = () => {
               </Link>
             </ul>
           </nav>
-          <CartWidget />
+          <CartWidget data={data}/>
         </div>
       </div>
       <div className="barra-categories">
