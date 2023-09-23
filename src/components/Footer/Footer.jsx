@@ -7,15 +7,15 @@ const Footer = () => {
         <div className="option">
             <h2>CONTACT</h2>
             <div className="direction">
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
             <h3>Cabildo 2000, CABA, Argentina</h3>
             </div>
             <div className="direction">
-            <i class="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-phone"></i>
             <h3>+111 22 33 444</h3>
             </div>
             <div className="direction">
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
             <h3>contact@teddy-bear.com</h3>
             </div>
          

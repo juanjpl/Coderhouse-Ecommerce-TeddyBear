@@ -6,7 +6,7 @@
 }
 
 
-.container-error{
+.container-detail{
 width: 100vw;
 height: 90vh;
 background-color: rgb(212, 162, 34);
@@ -15,18 +15,10 @@ flex-direction: column;
 justify-content: center;
 }
 
-.container-error>h1,
-.container-error>h2
+.container-detail>h1
 {
  color: #ffffff;
  font-size: 60px;
  font-weight: 900;
  font-family: var(--font-Rajdhani);
 }
-
-.container-error>h2{
-
-    font-size: 40px;
-    
-  
-   }

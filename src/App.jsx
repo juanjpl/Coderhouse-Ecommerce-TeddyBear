@@ -5,9 +5,11 @@ import AboutPage  from './views/AboutPage/AboutPage.jsx';
 import CartPage from './views/CartPage/CartPage.jsx';
 import CategoryPage from './views/CategoryPage/CategoryPage.jsx';
 import ContactPage from './views/ContactPage/ContactPage.jsx';
-import ItemPage from './views/ItemPage/ItemPage.jsx';
+import DetailPage from './views/DetailPage/DetailPage.jsx';
 import ShopPage from './views/ShopPage/ShopPage.jsx';
+import Checkout from './components/Checkout/Checkout.jsx';
 import Navbar from "./components/Navbar/Navbar.jsx";
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import "./App.css";
 
@@ -25,7 +27,7 @@ const App = () => {
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, " => ", doc.data());
+        //console.log(doc.id, " => ", doc.data());
 
         docs.push({...doc.data(),id: doc.id})
       });
@@ -50,11 +52,12 @@ const App = () => {
       <Route path='/home' element={<HomePage data={bears} />} />
       <Route path='/about' element={<AboutPage/>} />
       <Route path='/cart' element={<CartPage/>} />
-      <Route path='/categories' element={<CategoryPage/>} />
+      <Route path='/category/:id' element={<CategoryPage data={bears}/>} />
       <Route path='/contact' element={<ContactPage/>} />
-      <Route path='/item/:id' element={<ItemPage/>} />
-      <Route path='/shop' element={<ShopPage/>} />
-      <Route path='/*' element={<HomePage data={bears} />} />
+      <Route path='/item/:id' element={<DetailPage data={bears}/>} />
+      <Route path='/shop' element={<ShopPage data={bears}/>} />
+      <Route path='/checkout' element={<Checkout/>} />
+      <Route path='/*' element={<ErrorPage/>} />
     </Routes>
     <Footer />
     </div>

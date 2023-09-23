@@ -9,13 +9,13 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="barra-social">
         <div className="icons-redes">
-   <i class="fa-brands fa-square-x-twitter"></i>
+   <i className="fa-brands fa-square-x-twitter"></i>
        
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-pinterest-p"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-pinterest-p"></i>
+        <i className="fa-brands fa-facebook-f"></i>
+        <i className="fa-brands fa-youtube"></i>
+        <i className="fa-brands fa-linkedin"></i>
         </div>
         <div className="icons-texto">
           <h2>FREE WORLDWIDE SHIPPING & DISCOUNT UP TO 40% OFF</h2>

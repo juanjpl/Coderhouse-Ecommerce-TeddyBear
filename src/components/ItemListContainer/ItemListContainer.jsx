@@ -1,17 +1,13 @@
 import "./styles.css";
-import Item from '../Item/Item.jsx';
-import { useState , useEffect } from "react";
+import Item from "../Item/Item.jsx";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Spinner from "../Spinner/Spinner";
 
 const ItemListContainer = ({ data }) => {
   const [loading, setloading] = useState(true);
 
-
-
-
-
   useEffect(() => {
-   
     setTimeout(() => {
       setloading(false);
     }, 3000);
@@ -27,7 +23,9 @@ const ItemListContainer = ({ data }) => {
             {data.map((bear) => {
               return (
                 <div key={bear.id}>
-                  <Item data={bear} />
+                  <Link to={`/item/${bear.id} `}>
+                    <Item data={bear} />
+                  </Link>
                 </div>
               );
             })}
