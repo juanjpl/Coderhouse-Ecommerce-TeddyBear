@@ -1,35 +1,31 @@
 import "./styles.css";
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 
 const ItemDetail =({data})=>{
 
     return (
         <div className='container-item-detail'>
-         <div className="container-item">
-      <Card sx={{ maxWidth: 345 }}>
-        <CardHeader className="typography-header" title={data.name} />
-        <CardMedia
-          component="img"
-          height="400"
-          image={data.image}
-          alt={data.name}
-        />
-        <CardContent>
-          <Typography className="typography-category" >
-            Category: {data.category}
-          </Typography>
-          <Typography className="typography-eyes" >
-            Eyes:{data.eyes}
-          </Typography>
-        </CardContent>
-      </Card>
-    </div>
+    
+         <div className="item-detail">
+          <div className="container-image">
+          <img src={data.image} alt={data.image} />
+          </div>
+
+          <div className="container-description">
+          <h2 className="category">Category: {`${data.category}`}</h2>
+        <h3 className="price">$ {`${data.price}`}</h3>
+        <Link style={{ textDecoration:'none' }} className="li" to={`/item/${data.id}` }>
+          <li  className="link-cart">ADD TO CART</li>
+        </Link>
+        <h2 className="stock">Stock: {`${data.stock}`} </h2>
+          </div>
+     
+        <h2 className="name">{`${data.name}`} </h2>
+      
+       
+      </div>
+
         </div>
     )
 }

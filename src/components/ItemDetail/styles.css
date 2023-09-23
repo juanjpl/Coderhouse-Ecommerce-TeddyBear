@@ -2,8 +2,20 @@
 
 
 
-.typography-header,
-.typography-category,
-.typography-eyes{
-    text-decoration: none !important;
+.item-detail{
+    border: 1px solid black;
+    width: 70vw;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-image{
+    width: 35%;
+    border: 1px solid red;
+}
+
+.container-description{
+    width: 35%;
+    border: 1px solid red;
 }

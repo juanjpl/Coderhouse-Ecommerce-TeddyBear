@@ -7,7 +7,7 @@
 
 
 .container-item{
-    width: 100vw;
+    
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
     font-family: var(--font-Rajdhani);
     font-size: 25px;
     font-weight: 800;
-    transition: all 2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .li>li:hover{
