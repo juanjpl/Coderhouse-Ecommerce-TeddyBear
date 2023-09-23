@@ -8,6 +8,8 @@ const Navbar = ({data}) => {
 
 
 
+
+
   return (
     <div className="navbar-container">
       <div className="barra-social">
@@ -50,9 +52,16 @@ const Navbar = ({data}) => {
       </div>
       <div className="barra-categories">
         <div className="links-categories">
-          <a href="/category/Boy">BOYS</a>
-          <a href="/category/All">ALL</a>
-          <a href="/category/Girl">GIRLS</a>
+        <Link className="li" to="/category/Boy">
+                BOYS
+              </Link>
+              <Link className="li" to="/category/All">
+              ALL
+              </Link>
+              <Link className="li" to="/category/Girl">
+                GIRLS
+              </Link>
+        
         </div>
       </div>
     </div>

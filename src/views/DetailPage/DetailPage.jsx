@@ -6,12 +6,12 @@ import ItemDetailContainer from '../../components/ItemDetailContainer/ItemDetail
 const DetailPage =({data , onAdd})=>{
 
     const bears = data;
-    console.log(data);
+    //console.log(data);
     let {id} = useParams();
-    console.log(id);
+    //console.log(id);
 
     const result = bears.filter((bear) => bear.id === id );
-    console.log(result[0]);
+    //console.log(result[0]);
 
 
     return(
