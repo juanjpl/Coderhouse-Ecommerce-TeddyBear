@@ -1,12 +1,12 @@
 import   './styles.css';
-import SuperiorBar from '../../components/SuperiorBar/SuperiorBar';
+import SearchBar from '../../components/SearchBar/SearchBar';
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer.jsx';
 
 
 const ShopPage =({data})=>{
     return(
         <div className='container-shop'>
-            <SuperiorBar title={'Shop'} />
+            <SearchBar title='Shop' />
             <ItemListContainer data={data} />
         </div>
     )
