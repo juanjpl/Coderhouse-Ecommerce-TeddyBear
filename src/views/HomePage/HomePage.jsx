@@ -10,6 +10,7 @@ const HomePage = ({data}) => {
     <div className="container-home">
       <HeroHome />
       <BannerOne />
+      <h2>Star Products</h2>
       <ItemListContainer data={data} />
     
     </div>

@@ -1,0 +1,19 @@
+.superior-bar{
+    background-color: rgb(192, 192, 192);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    margin-top:10.5rem;
+  }
+
+  .contenedor-bar{
+    width: 80%;
+    margin: auto;
+
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .contenedor-bar>h2{
+    text-align: left;
+  }

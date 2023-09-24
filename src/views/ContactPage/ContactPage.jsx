@@ -1,9 +1,10 @@
 import   './styles.css';
-
+import SuperiorBar from '../../components/SuperiorBar/SuperiorBar';
 
 const ContactPage =()=>{
     return(
-        <div>
+        <div className='container-contact'>
+          <SuperiorBar title={'Contact'} />
           <h2>hello ! from Contact page</h2>
         </div>
     )

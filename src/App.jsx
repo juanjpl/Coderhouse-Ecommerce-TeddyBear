@@ -7,7 +7,6 @@ import CategoryPage from "./views/CategoryPage/CategoryPage.jsx";
 import ContactPage from "./views/ContactPage/ContactPage.jsx";
 import DetailPage from "./views/DetailPage/DetailPage.jsx";
 import ShopPage from "./views/ShopPage/ShopPage.jsx";
-import Checkout from "./components/Checkout/Checkout.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -20,12 +19,21 @@ import { db } from "./firebase/firebaseConfig.js";
 const App = () => {
   const [bears, setBears] = useState([]);
   const [cart, setCart] = useState(0);
+  const [cartBears , setCartBear] = useState([]);
+
+
+  function addBearToCart(bear){
+    //console.log(bear);
+    setCartBear([...cartBears,bear]);
+ 
+  }
 
   function onAdd(productos) {
     setCart(cart + productos);
 
   }
 
+  
   useEffect(() => {
     const getBears = async () => {
       const q = query(collection(db, "teddy-bears"));
@@ -42,12 +50,12 @@ const App = () => {
     };
 
     getBears();
-  }, [cart]);
+  }, [cart,cartBears]);
 
   return (
     <Router>
       <div className="container-app">
-        <Navbar data={cart} />
+        <Navbar data={cart}  />
         <Routes>
           <Route path="/" element={<HomePage data={bears} />} />
           <Route path="/home" element={<HomePage data={bears} />} />
@@ -60,10 +68,10 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route
             path="/item/:id"
-            element={<DetailPage data={bears} onAdd={onAdd} />}
+            element={<DetailPage data={bears} onAdd={onAdd} addBearToCart={addBearToCart} />}
           />
           <Route path="/shop" element={<ShopPage data={bears} />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout" element={<CartPage cartBears={cartBears} />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
         <Footer />

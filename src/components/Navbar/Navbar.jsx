@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import logoteddy from "./assets/logo-teddy.png";
 import CartWidget from "../CartWidget/CartWidget";
 
-const Navbar = ({data}) => {
+const Navbar = ({data }) => {
 
 
 

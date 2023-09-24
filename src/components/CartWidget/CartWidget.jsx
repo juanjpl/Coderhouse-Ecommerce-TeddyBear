@@ -8,7 +8,7 @@ const CartWidget = ({data}) => {
 
   return (
     <div className="container-widget">
-      <Link className="li" to='/cart'>
+      <Link className="li" to='/checkout'>
       <i className="fa-solid fa-bag-shopping"></i>
       <h2>{data}</h2>
       </Link>

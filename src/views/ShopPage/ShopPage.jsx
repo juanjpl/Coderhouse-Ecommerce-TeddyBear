@@ -1,10 +1,13 @@
 import   './styles.css';
+import SuperiorBar from '../../components/SuperiorBar/SuperiorBar';
+import ItemListContainer from '../../components/ItemListContainer/ItemListContainer.jsx';
 
 
-const ShopPage =()=>{
+const ShopPage =({data})=>{
     return(
-        <div>
-            <h1>Shop Page</h1>
+        <div className='container-shop'>
+            <SuperiorBar title={'Shop'} />
+            <ItemListContainer data={data} />
         </div>
     )
 }

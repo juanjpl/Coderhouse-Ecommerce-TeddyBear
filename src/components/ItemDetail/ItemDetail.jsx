@@ -2,9 +2,18 @@ import "./styles.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const ItemDetail = ({ data, onAdd }) => {
+const ItemDetail = ({ data, onAdd,addBearToCart }) => {
   
   const [count, setCount] = useState(1);
+  const [bear, setBear] =useState({
+    name:'',
+    price:0,
+    description:'',
+    imagen: '',
+    id:'',
+    quantity: 0
+
+  })
 
   useEffect(() => {
     //console.log(`Productos a agregar ${count} `);
@@ -53,6 +62,13 @@ const ItemDetail = ({ data, onAdd }) => {
                 onClick={() => {
                   onAdd(count);
                   setCount(1);
+                  addBearToCart([  
+                   { name:data.name,
+                    price:data.price,
+                    description:data.description,
+                    imagen: data.image,
+                    id:data.id,
+                    quantity: count}])
                 }}
               >
                 ADD TO CART
