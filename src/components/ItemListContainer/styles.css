@@ -1,0 +1,19 @@
+.container-item-list {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
+}
+
+
+
+.grid {
+  width: max-content;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
+
+.style-links{
+
+  text-decoration: none;
+}

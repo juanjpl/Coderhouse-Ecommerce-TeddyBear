@@ -1,10 +1,25 @@
-import styles from './styles.css';
+import   './styles.css';
+import { useState, useEffect } from "react";
+import Spinner from '../../components/Spinner/Spinner';
+import CartListContainer from '../../components/CartListContainer/CartListContainer.jsx';
 
+const CartPage =({cartBears})=>{
 
-const CartPage =()=>{
+    const [loading, setloading] = useState(true);
+    console.log(cartBears);
+ 
+
+    useEffect(() => {
+        
+        setTimeout(() => {
+          setloading(false);
+        }, 3000);
+      },[]);
+
     return(
-        <div>
-            <h1>Cart Page</h1>
+        <div className='container-cart'>
+              {loading ? <Spinner /> :  <CartListContainer data={cartBears} />}
+           
         </div>
     )
 }

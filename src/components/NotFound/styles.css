@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --background-color-brown:#8f5d32;
+    --font-Rajdhani: 'Rajdhani', sans-serif;
+}
+
+
+.container-not-found{
+width: 100vw;
+height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.container-not-found>h1
+{
+ color: var(--background-color-brown);
+ font-size: 60px;
+ font-weight: 900;
+ font-family: var(--font-Rajdhani);
+}
+
+
+

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --background-color-brown:#8f5d32;
+    --font-Rajdhani: 'Rajdhani', sans-serif;
+}
+
+
+.container-item{
+    
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item{
+    width: 30vw;
+    height: max-content;
+    border:1px solid black;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover{
+    border:5px solid black;
+}
+
+.item>img{
+    width: 100%;
+    padding:2em;
+}
+
+.item>.name{
+    text-decoration: none!important;
+    font-size: 30px;
+    font-weight: 900;
+    color:black;
+}
+
+.item>.category{
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(68, 68, 68);
+}
+
+.item>.price{
+    font-size: 45px;
+    font-weight: 900;
+    color:rgb(30, 148, 4);
+    padding:0.5em;
+}
+
+.link-cart{
+ 
+    background-color: #e95d00;
+    text-decoration: none!important;
+    list-style: none;
+    color:#ffffff;
+    text-decoration: none;
+    width: 100%;
+    padding:1em;
+    font-family: var(--font-Rajdhani);
+    font-size: 25px;
+    font-weight: 800;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-cart:hover{
+ 
+    background-color: #ff9225;
+}
+
+
+
+.item>.stock{
+    background-color: #0693e3;
+    color:#ffffff;
+    width: 100%;
+    padding:1em;
+    font-family: var(--font-Rajdhani);
+    font-size: 20px;
+    font-weight: 800;
+}
