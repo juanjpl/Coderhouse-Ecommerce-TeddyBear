@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import PaymentPage from "./views/PaymentPage/PaymentPage.jsx";
+
 import "./App.css";
 
 //Firebase

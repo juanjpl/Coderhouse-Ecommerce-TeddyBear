@@ -19,9 +19,11 @@ const PaymentPage =({cartBears})=>{
         }, 3000);
       },[]);
 
+
     return(
         <div className='container-payment-page'>
-              {loading ? <Spinner /> : <Payment/> }
+
+              {loading ? <Spinner /> : <Payment cartBears={cartBears} /> }
            
         </div>
     )

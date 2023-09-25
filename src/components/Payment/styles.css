@@ -1,16 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --background-color-brown:#8f5d32;
+    --font-Rajdhani: 'Rajdhani', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-Rajdhani);
+}
 
 .container-payment{
     width: 100vw;
-    height: 90vw;
-    background-color: rgb(17, 114, 82);
+    height: 60vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .style-form{
-    width: 50%;
-    height: 70%;
-    border: 1px solid red;
+    width: max-content;
+    height: 50%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-input{
+    width: max-content;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.label{
+    width: 150px;
+    height:30px;
+    text-align: left;
+
+
+}
+
+.input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid red;
+
+}
+
+.button-submit{
+
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(39, 39, 192);
+    border:none;
+
 }
