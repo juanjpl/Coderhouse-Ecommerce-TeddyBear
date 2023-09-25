@@ -2,7 +2,6 @@ import   './styles.css';
 import { useState, useEffect } from "react";
 import Spinner from '../../components/Spinner/Spinner';
 import Payment from '../../components/Payment/Payment';
-import NotFound from '../../components/NotFound/NotFound';
 
 
 

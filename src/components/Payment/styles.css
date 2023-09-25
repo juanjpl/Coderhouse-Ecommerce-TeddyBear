@@ -14,11 +14,12 @@
 
 .container-payment{
     width: 100vw;
-    height: 60vw;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .style-form{
     width: max-content;
@@ -26,6 +27,8 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding:2em;
+    
 
 }
 
@@ -49,7 +52,7 @@
 .input{
     width: 300px;
     height: 40px;
-    border: 1px solid red;
+  
 
 }
 
@@ -62,4 +65,16 @@
     background-color: rgb(39, 39, 192);
     border:none;
 
+}
+.comment{
+    text-align: left;
+    font-size: 12px;
+    color:rgb(79, 79, 79);
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
