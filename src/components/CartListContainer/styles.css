@@ -54,11 +54,14 @@ height: 50%;
 }
 
 
-.totalCart>.account>button{
+.button-pay-link{
     font-size: 30px;
     font-weight: 600;
     padding:0.5em;
     background-color: red;
     border:none;
+    width: 100%;
+    text-decoration: none;
+    color: white;
 }
 

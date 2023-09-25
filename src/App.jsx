@@ -10,6 +10,7 @@ import ShopPage from "./views/ShopPage/ShopPage.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import PaymentPage from "./views/PaymentPage/PaymentPage.jsx";
 import "./App.css";
 
 //Firebase
@@ -72,6 +73,7 @@ const App = () => {
           />
           <Route path="/shop" element={<ShopPage data={bears} />} />
           <Route path="/checkout" element={<CartPage cartBears={cartBears} />} />
+          <Route path="/payment" element={<PaymentPage cartBears={cartBears} />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
         <Footer />

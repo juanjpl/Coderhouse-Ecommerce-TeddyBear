@@ -1,0 +1,8 @@
+
+
+.container-payment-page{
+    width: 100vw;
+    height: max-content;
+    border: 1px solid red;
+    background-color: aqua;
+}

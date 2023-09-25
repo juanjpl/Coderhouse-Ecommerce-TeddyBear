@@ -30,7 +30,11 @@ const CartListContainer =({data})=>{
                 <h2 className="total-amount">Total Amount:</h2>
             </div>
             <div className="account">
-                <h2>{amount}</h2>  <button>PAY</button></div>
+                <h2>{amount}</h2> 
+                <Link className="style-links" to={`/payment `}>
+                <h2 className='button-pay-link'>PAY</h2>
+                  </Link> 
+                  </div>
            
           </div>
         </div>

@@ -7,11 +7,13 @@ import NotFound from '../NotFound/NotFound.jsx'
 
 const ItemListContainer = ({ data , searchItem }) => {
 
-  const [value, setValue] = useState(searchItem);
+  const [value, setValue] = useState([]);
   const [loading, setloading] = useState(true);
 
 
   useEffect(() => {
+
+    setValue(searchItem)
         
     setTimeout(() => {
       setloading(false);

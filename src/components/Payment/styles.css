@@ -1,0 +1,16 @@
+
+
+.container-payment{
+    width: 100vw;
+    height: 90vw;
+    background-color: rgb(17, 114, 82);
+    display: flex;
+    justify-content: center;
+}
+
+.style-form{
+    width: 50%;
+    height: 70%;
+    border: 1px solid red;
+    margin: auto;
+}
