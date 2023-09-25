@@ -40,4 +40,12 @@
 .search-input > i {
   margin-left: 0.5em;
   font-size: 30px;
+  padding:0.3em;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.search-input > i:hover {
+background-color: rgb(112, 112, 112);
+
 }

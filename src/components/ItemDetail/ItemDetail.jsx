@@ -15,6 +15,8 @@ const ItemDetail = ({ data, onAdd,addBearToCart }) => {
 
   })
 
+ 
+
   useEffect(() => {
     //console.log(`Productos a agregar ${count} `);
   }, [count]);
@@ -54,7 +56,7 @@ const ItemDetail = ({ data, onAdd,addBearToCart }) => {
             <Link
               style={{ textDecoration: "none" }}
               className="li"
-              to={`/home`}
+              to={`/checkout`}
             >
               <li
                 className="link-description-cart"
