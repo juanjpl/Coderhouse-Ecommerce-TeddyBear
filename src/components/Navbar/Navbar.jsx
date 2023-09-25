@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import logoteddy from "./assets/logo-teddy.png";
 import CartWidget from "../CartWidget/CartWidget";
 
+
 const Navbar = ({data }) => {
 
 
@@ -69,3 +70,13 @@ const Navbar = ({data }) => {
 };
 
 export default Navbar;
+
+const  NavBar = ()=> {
+  
+  return(
+    <div>
+      <h4>navbar</h4>
+    </div>
+  )
+}
+export default NavBar;

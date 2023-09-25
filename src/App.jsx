@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./views/HomePage/HomePage.jsx";
 import AboutPage from "./views/AboutPage/AboutPage.jsx";
@@ -11,6 +12,10 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import PaymentPage from "./views/PaymentPage/PaymentPage.jsx";
+
+
+import CardUser from "./components/CardUser.jsx";
+import SocialNav from "./components/SocialNav/SocialNav.jsx";
 
 import "./App.css";
 
@@ -55,6 +60,7 @@ const App = () => {
   }, [cart,cartBears]);
 
   return (
+
     <Router>
       <div className="container-app">
         <Navbar data={cart}  />
@@ -80,6 +86,22 @@ const App = () => {
         <Footer />
       </div>
     </Router>
+
+    <div className="contenedor-app">
+    
+<SocialNav/>
+   <div className="grid">
+      {bears.map((bear)=>{
+        return(
+          <div key={bear.id}>
+            <CardUser data={bear}/>
+          </div>
+        )
+      })}
+      </div>
+     
+    </div>
+
   );
 };
 
