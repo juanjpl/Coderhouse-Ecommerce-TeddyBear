@@ -71,12 +71,4 @@ const Navbar = ({data }) => {
 
 export default Navbar;
 
-const  NavBar = ()=> {
-  
-  return(
-    <div>
-      <h4>navbar</h4>
-    </div>
-  )
-}
-export default NavBar;
+

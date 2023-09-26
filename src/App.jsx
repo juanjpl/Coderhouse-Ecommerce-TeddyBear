@@ -12,11 +12,6 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import PaymentPage from "./views/PaymentPage/PaymentPage.jsx";
-
-
-import CardUser from "./components/CardUser.jsx";
-import SocialNav from "./components/SocialNav/SocialNav.jsx";
-
 import "./App.css";
 
 //Firebase
@@ -87,22 +82,9 @@ const App = () => {
       </div>
     </Router>
 
-    <div className="contenedor-app">
+  ) }
     
-<SocialNav/>
-   <div className="grid">
-      {bears.map((bear)=>{
-        return(
-          <div key={bear.id}>
-            <CardUser data={bear}/>
-          </div>
-        )
-      })}
-      </div>
-     
-    </div>
 
-  );
-};
+
 
 export default App;
