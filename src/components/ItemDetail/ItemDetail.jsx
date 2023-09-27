@@ -32,14 +32,14 @@ const ItemDetail = ({ data }) => {
           <h3 className="price">$ {`${data.price}`}</h3>
           <div className="botonera">
            
-            <button
+            <button className="button-detail"
               disabled={count >= data.stock}
               onClick={() => setCount((count) => count + 1)}
             >
              +
             </button>
             <p>{count} </p>
-            <button
+            <button className="button-detail"
               disabled={count <= 1}
               onClick={() => setCount((count) => count - 1)}
             >

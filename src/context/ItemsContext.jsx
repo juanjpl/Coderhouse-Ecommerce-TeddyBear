@@ -8,6 +8,8 @@ export const ItemsContext = createContext();
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 
+
+
 //creo el Provider ( siempre se coloca Provider)
 export const ItemsProvider = ({ children }) => {
   const [bears, setBears] = useState([]);

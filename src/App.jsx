@@ -14,6 +14,7 @@ import PaymentPage from "./views/PaymentPage/PaymentPage.jsx";
 import "./App.css";
 
 const App = () => {
+  
   return (
     <ItemsProvider>
       <Router>
