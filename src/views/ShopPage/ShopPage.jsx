@@ -1,11 +1,15 @@
 import "./styles.css";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useContext } from 'react';
+import { ItemsContext } from '../../context/ItemsContext';
 import ItemListContainer from "../../components/ItemListContainer/ItemListContainer.jsx";
 
-const ShopPage = ({ data }) => {
+const ShopPage = () => {
+
+  const {bears } = useContext(ItemsContext);
   const [value, setValue] = useState("");
-  const [dataFiltered , setDataFiltered] = useState(data);
+  const [dataFiltered , setDataFiltered] = useState(bears);
 
   const onChange = (e) => {
     //console.log(e.target.value);
@@ -17,7 +21,7 @@ const ShopPage = ({ data }) => {
     e.preventDefault();
     console.log("Imprime value", value);
     setValue("");
-    const filtered = data.filter((bear) => bear.name.toLowerCase().includes(value.toLowerCase()));
+    const filtered = bears.filter((bear) => bear.name.toLowerCase().includes(value.toLowerCase()));
    setDataFiltered(filtered)
 
   

@@ -5,7 +5,7 @@ import Payment from '../../components/Payment/Payment';
 
 
 
-const PaymentPage =({cartBears})=>{
+const PaymentPage =()=>{
 
     const [loading, setloading] = useState(true);
 
@@ -22,7 +22,7 @@ const PaymentPage =({cartBears})=>{
     return(
         <div className='container-payment-page'>
 
-              {loading ? <Spinner /> : <Payment cartBears={cartBears} /> }
+              {loading ? <Spinner /> : <Payment  /> }
            
         </div>
     )
