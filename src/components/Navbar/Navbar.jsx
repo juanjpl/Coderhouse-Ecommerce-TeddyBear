@@ -21,10 +21,11 @@ const Navbar = () => {
       </div>
       <div className="navbar">
         <div className="logo-teddy">
-        <Link className="logo-image-link" to="/">
-        <img src={logoteddy} alt="logo-teddy" />
+        
+        <Link className="li-image-link" to="/">
+        <img className="image-logo-link" src={logoteddy} alt="logo-teddy" />
               </Link>
-  
+        
         </div>
         <div className="links-nav">
           <nav>

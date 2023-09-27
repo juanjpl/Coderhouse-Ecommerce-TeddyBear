@@ -80,3 +80,13 @@ const ItemDetail = ({ data }) => {
 };
 
 export default ItemDetail;
+
+
+56
+512
+3
+
+100
+46
+302
+93

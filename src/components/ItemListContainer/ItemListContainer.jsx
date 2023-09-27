@@ -25,9 +25,9 @@ const ItemListContainer = ({ data, searchItem }) => {
         <NotFound />
       ) : (
         <div className="grid">
-          {data.map((bear) => {
+          {data.map((bear,index) => {
             return (
-              <div key={bear.id}>
+              <div key={index}>
                 <Link className="style-links" to={`/item/${bear.id} `}>
                   <Items data={bear} />
                 </Link>

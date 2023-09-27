@@ -6,13 +6,12 @@ import ItemDetailContainer from "../../components/ItemDetailContainer/ItemDetail
 
 const DetailPage = () => {
   const { bears } = useContext(ItemsContext);
-
-  //console.log(data);
   let { id } = useParams();
-  //console.log(id);
 
+
+  console.log(bears)
   const result = bears.filter((bear) => bear.id === id);
-  //console.log(result[0]);
+console.log(result[0])
 
   return (
     <div className="container-detail">
