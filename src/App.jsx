@@ -49,6 +49,7 @@ const App = () => {
       });
 
       setBears(docs);
+      console.log(bears)
     };
 
     getBears();
