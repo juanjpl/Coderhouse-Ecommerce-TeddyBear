@@ -1,22 +1,14 @@
 import "./styles.css";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 import logoteddy from "./assets/logo-teddy.png";
 import CartWidget from "../CartWidget/CartWidget";
 
-
-const Navbar = ({data }) => {
-
-
-
-
-
+const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="barra-social">
         <div className="icons-redes">
           <i className="fa-brands fa-square-x-twitter"></i>
-
           <i className="fa-brands fa-instagram"></i>
           <i className="fa-brands fa-pinterest-p"></i>
           <i className="fa-brands fa-facebook-f"></i>
@@ -48,21 +40,20 @@ const Navbar = ({data }) => {
               </Link>
             </ul>
           </nav>
-          <CartWidget data={data}/>
+          <CartWidget />
         </div>
       </div>
       <div className="barra-categories">
         <div className="links-categories">
-        <Link className="li" to="/category/Boy">
-                BOYS
-              </Link>
-              <Link className="li" to="/category/All">
-              ALL
-              </Link>
-              <Link className="li" to="/category/Girl">
-                GIRLS
-              </Link>
-        
+          <Link className="li" to="/category/Boy">
+            BOYS
+          </Link>
+          <Link className="li" to="/category/All">
+            ALL
+          </Link>
+          <Link className="li" to="/category/Girl">
+            GIRLS
+          </Link>
         </div>
       </div>
     </div>
@@ -70,5 +61,3 @@ const Navbar = ({data }) => {
 };
 
 export default Navbar;
-
-

@@ -3,7 +3,7 @@ import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 import { useState, useEffect } from "react";
 import Spinner from "../Spinner/Spinner.jsx";
 
-const ItemDetailContainer = ({ data , onAdd, addBearToCart}) => {
+const ItemDetailContainer = ({data}) => {
   
   const [loading, setloading] = useState(true);
 
@@ -15,7 +15,7 @@ const ItemDetailContainer = ({ data , onAdd, addBearToCart}) => {
 
   return (
     <div className="container-item-detail">
-      {loading ? <Spinner /> : <ItemDetail data={data} onAdd={onAdd} addBearToCart={addBearToCart} />}
+      {loading ? <Spinner /> : <ItemDetail data={data}  />}
     </div>
   );
 };

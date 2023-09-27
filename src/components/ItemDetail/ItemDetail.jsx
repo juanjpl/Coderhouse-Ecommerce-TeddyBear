@@ -1,24 +1,19 @@
 import "./styles.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useContext } from 'react';
+import { ItemsContext } from '../../context/ItemsContext';
 
-const ItemDetail = ({ data, onAdd,addBearToCart }) => {
+const ItemDetail = ({ data }) => {
+
+  const { onAdd ,addBearToCart } = useContext(ItemsContext);
   
   const [count, setCount] = useState(1);
-  const [bear, setBear] =useState({
-    name:'',
-    price:0,
-    description:'',
-    imagen: '',
-    id:'',
-    quantity: 0
-
-  })
 
  
 
   useEffect(() => {
-    //console.log(`Productos a agregar ${count} `);
+    
   }, [count]);
 
   return (

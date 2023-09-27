@@ -1,8 +1,13 @@
 import "./styles.css";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-const CartWidget = ({data}) => {
+import { useContext } from 'react';
+import { ItemsContext } from '../../context/ItemsContext';
 
+
+const CartWidget = () => {
+
+  const {cart } = useContext(ItemsContext);
+ 
 
 
 
@@ -10,7 +15,7 @@ const CartWidget = ({data}) => {
     <div className="container-widget">
       <Link className="li" to='/checkout'>
       <i className="fa-solid fa-bag-shopping"></i>
-      <h2>{data}</h2>
+      <h2>{cart}</h2>
       </Link>
     
     </div>

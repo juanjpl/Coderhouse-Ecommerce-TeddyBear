@@ -1,11 +1,9 @@
 import "./styles.css";
-import { useState, useEffect } from "react";
-import Spinner from "../../components/Spinner/Spinner";
 import SuperiorBar from "../SuperiorBar/SuperiorBar";
 import * as yup from "yup";
 import { Formik } from "formik";
 
-//ypu schemas
+
 
 
 
@@ -13,7 +11,9 @@ import { Formik } from "formik";
 
 /* <p>{errors.name && touched.name && errors.name}</p> */
 
-const Payment = ({ cartBears }) => {
+const Payment = () => {
+
+
 
   const yupSchema = yup.object({
     name: yup.string().min(4, 'Please enter min 4 characters!').max(10,'Please enter mmax 10 characters!').required(),
