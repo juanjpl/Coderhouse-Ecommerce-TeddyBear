@@ -8,19 +8,20 @@ import ItemListContainer from "../../components/ItemListContainer/ItemListContai
 const ShopPage = () => {
 
   const {bears } = useContext(ItemsContext);
-  const [value, setValue] = useState("");
+
+  const [value, setValue] = useState(" ");
   const [dataFiltered , setDataFiltered] = useState(bears);
 
   const onChange = (e) => {
     //console.log(e.target.value);
     setValue(e.target.value);
-    console.log(value);
+    //console.log(value);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log("Imprime value", value);
-    setValue("");
+    //console.log("Imprime value", value);
+    setValue(" ");
     const filtered = bears.filter((bear) => bear.name.toLowerCase().includes(value.toLowerCase()));
    setDataFiltered(filtered)
 

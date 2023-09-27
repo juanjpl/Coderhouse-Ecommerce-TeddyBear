@@ -7,14 +7,15 @@ import ItemCart from "../ItemCart/ItemCart.jsx";
 import SuperiorBar from "../../components/SuperiorBar/SuperiorBar";
 
 const CartListContainer = () => {
-  const { cart } = useContext(ItemsContext);
+  const { cartBears } = useContext(ItemsContext);
+  
   const [amount, setamount] = useState(0);
 
   return (
     <div className="container-cartList">
       <SuperiorBar title={"Checkout"} />
       <div className="container-cards">
-        {cart.map((item, index) => {
+        {cartBears.map((item, index) => {
           return (
             <div key={index}>
               <Link className="style-links" to={`/item/${item[0].id} `}>

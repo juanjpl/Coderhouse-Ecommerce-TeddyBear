@@ -1,7 +1,7 @@
 import "./styles.css";
 
 const ItemCart = ({ data }) => {
-  console.log(data[0]);
+  //console.log(data[0]);
   return (
     <div className="container-itemCart">
       <div className="image-itemCart">

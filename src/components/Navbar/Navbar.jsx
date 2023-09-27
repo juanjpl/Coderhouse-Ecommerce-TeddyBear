@@ -3,19 +3,12 @@ import { Link } from "react-router-dom";
 import logoteddy from "./assets/logo-teddy.png";
 import CartWidget from "../CartWidget/CartWidget";
 
-
 const Navbar = () => {
-
-
-
-
-
   return (
     <div className="navbar-container">
       <div className="barra-social">
         <div className="icons-redes">
           <i className="fa-brands fa-square-x-twitter"></i>
-
           <i className="fa-brands fa-instagram"></i>
           <i className="fa-brands fa-pinterest-p"></i>
           <i className="fa-brands fa-facebook-f"></i>
@@ -52,16 +45,15 @@ const Navbar = () => {
       </div>
       <div className="barra-categories">
         <div className="links-categories">
-        <Link className="li" to="/category/Boy">
-                BOYS
-              </Link>
-              <Link className="li" to="/category/All">
-              ALL
-              </Link>
-              <Link className="li" to="/category/Girl">
-                GIRLS
-              </Link>
-        
+          <Link className="li" to="/category/Boy">
+            BOYS
+          </Link>
+          <Link className="li" to="/category/All">
+            ALL
+          </Link>
+          <Link className="li" to="/category/Girl">
+            GIRLS
+          </Link>
         </div>
       </div>
     </div>
@@ -69,5 +61,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
