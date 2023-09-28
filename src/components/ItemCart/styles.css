@@ -16,8 +16,6 @@
 .container-itemCart{
     width: 100%;
     height: max-content;
-  
-    border: 1px solid black;
     display: flex;
     padding:1em;
     
@@ -57,8 +55,10 @@
 
 .description-itemCart>.description{
     color:black;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 400;
+    text-align: justify;
+
 }
 
 .payment-itemCart{
@@ -82,4 +82,14 @@ color:black;
     font-size: 50px;
     font-weight: 600;
    
+    }
+
+    .button-x{
+        background-color: red;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 0;
+    
+        
     }

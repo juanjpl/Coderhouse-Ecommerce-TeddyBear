@@ -10,7 +10,21 @@ const CartListContainer = () => {
   
   const { cartBears } = useContext(ItemsContext);
   
-  const [amount, setamount] = useState(0);
+  const [amount, setAmount] = useState(0);
+
+  //console.log(cartBears)
+  let sum =0;
+
+  for (let i = 0; i < cartBears.length; i++) {
+
+    sum += ( cartBears[i][0].price)*( cartBears[i][0].quantity)
+
+  }
+
+
+ 
+
+
 
   return (
     <div className="container-cartList">
@@ -32,10 +46,16 @@ const CartListContainer = () => {
           <h2 className="total-amount">Total Amount:</h2>
         </div>
         <div className="account">
-          <h2>{amount}</h2>
-          <Link className="style-links" to={`/payment `}>
-            <h2 className="button-pay-link">PAY</h2>
-          </Link>
+          <h2>$ {sum}</h2>
+          {cartBears.length===0?
+          <h2>ho nay compras</h2>
+         :
+         <Link className="style-links" to={`/payment `} >
+          
+         <h2 className="button-pay-link">PAY</h2>
+       </Link>
+          }
+         
         </div>
       </div>
     </div>

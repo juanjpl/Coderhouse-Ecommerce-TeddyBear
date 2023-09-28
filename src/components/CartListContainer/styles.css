@@ -8,15 +8,13 @@
 }
 .container-cards{
     width: 85vw;
-    border: 1px solid black;
-   
     margin:1em auto;
 }
 
 .totalCart{
     display: flex;
     width: 85vw;
-    border: 1px solid black;
+ 
     margin:auto;
 }
 
@@ -29,7 +27,7 @@
 }
 
 .totalCart>.total>.total-amount{
-    border: 1px solid black;
+   
 width: 100%;
 height: 50%;
 }

@@ -13,7 +13,10 @@ const ItemCart = ({ data }) => {
         <h2 className="description">{data[0].description} </h2>
       </div>
       <div className="payment-itemCart">
-        <h3 className="id">ID: {data[0].id} </h3>
+        <div>
+          <button className="button-x">Eliminar</button>
+        </div>
+        <h3 className="id">Product ID: {data[0].id} </h3>
         <h3 className="price">Price: ${data[0].price} </h3>
         <h3 className="quantity">Quantity: {data[0].quantity} </h3>
       </div>
