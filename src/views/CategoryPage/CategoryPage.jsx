@@ -8,6 +8,7 @@ import Spinner from "../../components/Spinner/Spinner";
 
 const CategoryPage = () => {
   const { bears } = useContext(ItemsContext);
+
   const [loading, setloading] = useState(true);
 
   let { category } = useParams();

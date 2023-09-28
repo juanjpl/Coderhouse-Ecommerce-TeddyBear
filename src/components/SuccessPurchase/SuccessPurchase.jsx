@@ -1,8 +1,8 @@
-import "./styles.css";
+import ".styles.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
-const ErrorPage = () => {
+const SuccessPurchase = ({ order }) => {
   const [counter, setCounter] = useState(3);
   const navigate = useNavigate();
 
@@ -12,7 +12,6 @@ const ErrorPage = () => {
     }, 4000);
 
     const interval = setInterval(() => {
-      // console.log('This will be called every 1 seconds');
       setCounter(counter - 1);
     }, 1000);
 
@@ -20,11 +19,12 @@ const ErrorPage = () => {
   }, [navigate, counter]);
 
   return (
-    <div className="container-error">
-      <h1>Error 404</h1>
-      <h2>Usted serà redirigido a la Home en {counter} seg....</h2>
+    <div>
+      <h2>Gracias por su compra!</h2>
+      <h2>Su orden tiene ID:</h2>
+      <h3>{order} </h3>
     </div>
   );
 };
 
-export default ErrorPage;
+export default SuccessPurchase;

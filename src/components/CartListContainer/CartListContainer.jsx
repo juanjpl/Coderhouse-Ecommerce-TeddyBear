@@ -7,6 +7,7 @@ import ItemCart from "../ItemCart/ItemCart.jsx";
 import SuperiorBar from "../../components/SuperiorBar/SuperiorBar";
 
 const CartListContainer = () => {
+  
   const { cartBears } = useContext(ItemsContext);
   
   const [amount, setamount] = useState(0);
