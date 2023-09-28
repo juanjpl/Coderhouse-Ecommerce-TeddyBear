@@ -12,6 +12,11 @@ import { db } from "../../firebase/firebaseConfig";
 
 const HomePage = () => {
   const { bears, setBears } = useContext(ItemsContext);
+  const [datas , setDatas] = useState([])
+
+ 
+
+ 
 
   useEffect(() => {
     const getBears = async () => {
@@ -25,6 +30,9 @@ const HomePage = () => {
       });
       //console.log(docs);
       setBears(docs);
+      const ordered = docs.sort((a,b)=>a.price - b.price);
+
+      setDatas(ordered.slice(0,4));
     };
     getBears();
   }, []);
@@ -34,7 +42,7 @@ const HomePage = () => {
       <HeroHome />
       <BannerOne />
       <h2>Star Products</h2>
-      <ItemListContainer data={bears} />
+      <ItemListContainer data={datas} />
     </div>
   );
 };
