@@ -1,0 +1,16 @@
+
+
+.purchase-container{
+width: 100vw;
+height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.purchase-container>h3{
+    font-size: 4em;
+    font-weight: 900;
+    padding: 1em;
+    }

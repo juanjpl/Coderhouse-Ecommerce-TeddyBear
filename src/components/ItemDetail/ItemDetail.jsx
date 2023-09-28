@@ -1,20 +1,15 @@
 import "./styles.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useContext } from 'react';
-import { ItemsContext } from '../../context/ItemsContext';
+import { useContext } from "react";
+import { ItemsContext } from "../../context/ItemsContext";
 
 const ItemDetail = ({ data }) => {
+  const { onAdd, addBearToCart } = useContext(ItemsContext);
 
-  const { onAdd ,addBearToCart } = useContext(ItemsContext);
-  
   const [count, setCount] = useState(1);
 
- 
-
-  useEffect(() => {
-    
-  }, [count]);
+  useEffect(() => {}, [count]);
 
   return (
     <div className="container-item-detail">
@@ -24,22 +19,21 @@ const ItemDetail = ({ data }) => {
         </div>
 
         <div className="container-description">
-        
-
           <h2 className="name">{`${data.name}`} </h2>
           <h2 className="category">Category: {`${data.category}`}</h2>
           <h2 className="description">{`${data.description}`} </h2>
           <h3 className="price">$ {`${data.price}`}</h3>
           <div className="botonera">
-           
-            <button className="button-detail"
+            <button
+              className="button-detail"
               disabled={count >= data.stock}
               onClick={() => setCount((count) => count + 1)}
             >
-             +
+              +
             </button>
             <p>{count} </p>
-            <button className="button-detail"
+            <button
+              className="button-detail"
               disabled={count <= 1}
               onClick={() => setCount((count) => count - 1)}
             >
@@ -59,13 +53,16 @@ const ItemDetail = ({ data }) => {
                 onClick={() => {
                   onAdd(count);
                   setCount(1);
-                  addBearToCart([  
-                   { name:data.name,
-                    price:data.price,
-                    description:data.description,
-                    imagen: data.image,
-                    id:data.id,
-                    quantity: count}])
+                  addBearToCart([
+                    {
+                      name: data.name,
+                      price: data.price,
+                      description: data.description,
+                      imagen: data.image,
+                      id: data.id,
+                      quantity: count,
+                    },
+                  ]);
                 }}
               >
                 ADD TO CART
@@ -81,12 +78,11 @@ const ItemDetail = ({ data }) => {
 
 export default ItemDetail;
 
+56;
+512;
+3;
 
-56
-512
-3
-
-100
-46
-302
-93
+100;
+46;
+302;
+93;

@@ -29,13 +29,13 @@ const Payment = () => {
     .required();
 
   const sumitHandler = async (values, { resetForm }) => {
-    console.log(values);
+    // console.log(values);
 
     // Add a new document with a generated id.
     const docRef = await addDoc(collection(db, "purchasesCollection"), {
       values,
     });
-    console.log("Document written with ID: ", docRef.id);
+    //console.log("Document written with ID: ", docRef.id);
     setPurchaseID(docRef.id);
     resetForm();
   };

@@ -18,9 +18,9 @@ const DetailPage = () => {
   //const { bears } = useContext(ItemsContext);
   let { id } = useParams();
 
-  console.log(bears);
+  //console.log(bears);
   const result = bears.filter((bear) => bear.id === id);
-  console.log(result[0]);
+  //console.log(result[0]);
 
 /*
   useEffect(() => {

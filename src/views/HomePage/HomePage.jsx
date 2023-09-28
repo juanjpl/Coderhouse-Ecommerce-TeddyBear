@@ -23,7 +23,7 @@ const HomePage = () => {
         // console.log('DATA:', doc.data(), 'ID:', doc.id);
         docs.push({ ...doc.data(), id: doc.id });
       });
-      console.log(docs);
+      //console.log(docs);
       setBears(docs);
     };
     getBears();
