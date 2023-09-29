@@ -1,6 +1,12 @@
 import "./styles.css";
+import { useContext } from "react";
+import { ItemsContext } from "../../context/ItemsContext";
 
-const ItemCart = ({ data }) => {
+
+const ItemCart = ({ data  }) => {
+
+  const {removeBearToCart } = useContext(ItemsContext);
+
   //console.log(data[0]);
   return (
     <div className="container-itemCart">
@@ -14,7 +20,8 @@ const ItemCart = ({ data }) => {
       </div>
       <div className="payment-itemCart">
         <div>
-          <button className="button-x">Eliminar</button>
+      
+          <button onClick={()=>removeBearToCart(data[0])} className="button-x">Eliminar</button>
         </div>
         <h3 className="id">Product ID: {data[0].id} </h3>
         <h3 className="price">Price: ${data[0].price} </h3>

@@ -43,13 +43,13 @@ export const ItemsProvider = ({ children }) => {
   function addBearToCart(bear) {
     //revisar si existe en el carrito un elemento igual
     const existe = cartBears.some((item) => item[0].id === bear[0].id);
-    console.log(existe);
-    console.log(bear[0].id)
+    //console.log(existe);
+    //console.log(bear[0].id)
 
     if (existe) {
       const items = cartBears.map((teddy) => {
         if (teddy[0].id === bear[0].id) {
-         console.log(  teddy[0].quantity + bear[0].quantity);
+        // console.log(  teddy[0].quantity + bear[0].quantity);
          teddy[0].quantity +=  bear[0].quantity
           return teddy;
 
@@ -59,17 +59,27 @@ export const ItemsProvider = ({ children }) => {
       });
 
       setCartBear([...items])
-      console.log(cartBears)
+      //console.log(cartBears)
     } else {
       setCartBear([...cartBears, bear]);
       
     }
 
-    console.log(cartBears)
+    //console.log(cartBears)
   }
 
   function onAdd(productos) {
     setCart(cart + productos);
+  }
+
+  function removeBearToCart(bear) {
+    console.log(bear)
+    console.log(bear.id)
+
+   const removeBear = cartBears.filter((teddy)=> teddy[0].id !== bear.id);
+   console.log(removeBear)
+   setCartBear(removeBear)
+   setCart(removeBear.length)
   }
 
   return (
@@ -82,6 +92,7 @@ export const ItemsProvider = ({ children }) => {
         cartBears,
         setCartBear,
         addBearToCart,
+        removeBearToCart,
         onAdd,
       }}
     >
