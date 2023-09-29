@@ -41,7 +41,31 @@ export const ItemsProvider = ({ children }) => {
   const [cartBears, setCartBear] = useState([]);
 
   function addBearToCart(bear) {
-    setCartBear([...cartBears, bear]);
+    //revisar si existe en el carrito un elemento igual
+    const existe = cartBears.some((item) => item[0].id === bear[0].id);
+    console.log(existe);
+    console.log(bear[0].id)
+
+    if (existe) {
+      const items = cartBears.map((teddy) => {
+        if (teddy[0].id === bear[0].id) {
+         console.log(  teddy[0].quantity + bear[0].quantity);
+         teddy[0].quantity +=  bear[0].quantity
+          return teddy;
+
+        } else {
+          return teddy;
+        }
+      });
+
+      setCartBear([...items])
+      console.log(cartBears)
+    } else {
+      setCartBear([...cartBears, bear]);
+      
+    }
+
+    console.log(cartBears)
   }
 
   function onAdd(productos) {

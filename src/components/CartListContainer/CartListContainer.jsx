@@ -1,6 +1,6 @@
 import "./styles.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { ItemsContext } from "../../context/ItemsContext";
 import ItemCart from "../ItemCart/ItemCart.jsx";
@@ -10,7 +10,7 @@ const CartListContainer = () => {
   
   const { cartBears } = useContext(ItemsContext);
   
-  const [amount, setAmount] = useState(0);
+ 
 
   //console.log(cartBears)
   let sum =0;
@@ -22,7 +22,6 @@ const CartListContainer = () => {
   }
 
 
- 
 
 
 
