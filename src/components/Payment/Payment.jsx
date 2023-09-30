@@ -2,6 +2,8 @@ import "./styles.css";
 import SuperiorBar from "../SuperiorBar/SuperiorBar";
 import SuccessPurchase from "../SuccessPurchase/SuccessPurchase.jsx";
 import * as yup from "yup";
+import { useContext } from "react";
+import { ItemsContext } from "../../context/ItemsContext";
 import { Formik } from "formik";
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
@@ -12,17 +14,18 @@ import { db } from "../../firebase/firebaseConfig";
 const Payment = () => {
   const [purchaseID, setPurchaseID] = useState("");
 
+  const {removeAll } = useContext(ItemsContext);
   const yupSchema = yup
     .object({
       name: yup
         .string()
         .min(4, "Please enter min 4 characters!")
-        .max(10, "Please enter mmax 10 characters!")
+        .max(15, "Please enter mmax 10 characters!")
         .required(),
       lastName: yup
         .string()
         .min(4, "Please enter min 4 characters!")
-        .max(10, "Please enter mmax 10 characters!")
+        .max(15, "Please enter mmax 10 characters!")
         .required(),
       email: yup.string().email().required(),
     })
@@ -120,6 +123,11 @@ const Payment = () => {
                   type="submit"
                   className="button-submit"
                   disabled={!(isValid && dirty)}
+                 
+                  onClick={() => 
+                    removeAll()   // INVOCATION
+         
+                  }
                 >
                   BUY
                 </button>

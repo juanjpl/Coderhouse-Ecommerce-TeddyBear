@@ -77,6 +77,12 @@ export const ItemsProvider = ({ children }) => {
     setCart(cart - bear.quantity);
   }
 
+  function removeAll(){
+    setCartBear([]);
+    setCart(0);
+    console.log('Su carrito ha sido borrado!')
+  }
+
   return (
     <ItemsContext.Provider
       value={{
@@ -88,6 +94,7 @@ export const ItemsProvider = ({ children }) => {
         setCartBear,
         addBearToCart,
         removeBearToCart,
+        removeAll,
         onAdd,
       }}
     >

@@ -64,6 +64,7 @@
     font-size: 20px;
     background-color: rgb(39, 39, 192);
     border:none;
+    border-radius: 0px;
 
 }
 .comment{
@@ -77,4 +78,5 @@ button[disabled]{
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
+  border-radius: 0px;
 }
