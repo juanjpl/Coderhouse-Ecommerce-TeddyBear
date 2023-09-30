@@ -32,7 +32,7 @@ const CartListContainer = () => {
         {cartBears.map((item, index) => {
           return (
             <div key={index}>
-              <Link className="style-links" to={`/item/${item[0].id} `}>
+              <Link className="style-links" to={`/item/${item[0].id} `} onClick={() => window.scrollTo(0, 0)}>
                 <ItemCart data={item} />
               </Link>
             </div>

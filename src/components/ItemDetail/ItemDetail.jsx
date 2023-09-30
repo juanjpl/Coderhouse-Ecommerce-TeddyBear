@@ -46,6 +46,7 @@ const ItemDetail = ({ data }) => {
               style={{ textDecoration: "none" }}
               className="li"
               to={`/checkout`}
+              onClick={() => window.scrollTo(0, 0)}
             >
               <li
                 className="link-description-cart"

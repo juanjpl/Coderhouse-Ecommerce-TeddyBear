@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="logo-teddy">
         
-        <Link className="li-image-link" to="/">
+        <Link className="li-image-link" to="/" onClick={() => window.scrollTo(0, 0)}>
         <img className="image-logo-link" src={logoteddy} alt="logo-teddy" />
               </Link>
         
@@ -30,16 +30,16 @@ const Navbar = () => {
         <div className="links-nav">
           <nav>
             <ul>
-              <Link className="li" to="/">
+              <Link className="li" to="/" onClick={() => window.scrollTo(0, 0)}>
                 HOMEPAGE
               </Link>
-              <Link className="li" to="/about">
+              <Link className="li" to="/about" onClick={() => window.scrollTo(0, 0)}>
                 ABOUT
               </Link>
-              <Link className="li" to="/shop">
+              <Link className="li" to="/shop" onClick={() => window.scrollTo(0, 0)}>
                 SHOP
               </Link>
-              <Link className="li" to="/contact">
+              <Link className="li" to="/contact" onClick={() => window.scrollTo(0, 0)}>
                 CONTACT
               </Link>
             </ul>
@@ -49,13 +49,13 @@ const Navbar = () => {
       </div>
       <div className="barra-categories">
         <div className="links-categories">
-          <Link className="li" to="/category/Boy">
+          <Link className="li" to="/category/Boy" onClick={() => window.scrollTo(0, 0)}>
             BOYS
           </Link>
-          <Link className="li" to="/category/All">
+          <Link className="li" to="/category/All" onClick={() => window.scrollTo(0, 0)}>
             ALL
           </Link>
-          <Link className="li" to="/category/Girl">
+          <Link className="li" to="/category/Girl" onClick={() => window.scrollTo(0, 0)}>
             GIRLS
           </Link>
         </div>

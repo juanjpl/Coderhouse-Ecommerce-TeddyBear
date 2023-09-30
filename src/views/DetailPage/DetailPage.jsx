@@ -20,26 +20,7 @@ const DetailPage = () => {
 
   //console.log(bears);
   const result = bears.filter((bear) => bear.id === id);
-  //console.log(result[0]);
 
-/*
-  useEffect(() => {
-    const getBears = async () => {
-      const q = query(collection(db, "playersCollection"));
-      const docs = [];
-      const querySnapshot = await getDocs(q);
-      // console.log('DATA:', querySnapshot);
-      querySnapshot.forEach((doc) => {
-        // console.log('DATA:', doc.data(), 'ID:', doc.id);
-        docs.push({ ...doc.data(), id: doc.id });
-      });
-      // console.log(docs);
-      setBears(docs);
-    };
-    getBears();
-
-  }, []);
-  */
 
   return (
     <div className="container-detail">

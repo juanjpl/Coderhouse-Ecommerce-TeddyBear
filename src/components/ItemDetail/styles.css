@@ -84,7 +84,7 @@
 .botonera{
   display: flex;
   flex-direction: row;
-  margin: 0.2em auto;
+  margin: 1em auto;
 }
 .botonera>p{
   width: 150px;

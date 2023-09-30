@@ -49,20 +49,18 @@ export const ItemsProvider = ({ children }) => {
     if (existe) {
       const items = cartBears.map((teddy) => {
         if (teddy[0].id === bear[0].id) {
-        // console.log(  teddy[0].quantity + bear[0].quantity);
-         teddy[0].quantity +=  bear[0].quantity
+          // console.log(  teddy[0].quantity + bear[0].quantity);
+          teddy[0].quantity += bear[0].quantity;
           return teddy;
-
         } else {
           return teddy;
         }
       });
 
-      setCartBear([...items])
+      setCartBear([...items]);
       //console.log(cartBears)
     } else {
       setCartBear([...cartBears, bear]);
-      
     }
 
     //console.log(cartBears)
@@ -73,13 +71,10 @@ export const ItemsProvider = ({ children }) => {
   }
 
   function removeBearToCart(bear) {
-    console.log(bear)
-    console.log(bear.id)
+    const removeBear = cartBears.filter((teddy) => teddy[0].id !== bear.id);
 
-   const removeBear = cartBears.filter((teddy)=> teddy[0].id !== bear.id);
-   console.log(removeBear)
-   setCartBear(removeBear)
-   setCart(removeBear.length)
+    setCartBear(removeBear);
+    setCart(cart - bear.quantity);
   }
 
   return (

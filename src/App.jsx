@@ -16,7 +16,7 @@ import "./App.css";
 const App = () => {
   return (
     <ItemsProvider>
-      <Router>
+      <Router  >
         <div className="container-app">
           <Navbar />
           <Routes>

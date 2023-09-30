@@ -30,7 +30,7 @@ const ItemListContainer = ({ data, searchItem }) => {
           {data.map((bear,index) => {
             return (
               <div key={index}>
-                <Link className="style-links" to={`/item/${bear.id} `}>
+                <Link className="style-links" to={`/item/${bear.id} `} onClick={() => window.scrollTo(0, 0)}>
                   <Items data={bear} />
                 </Link>
               </div>
