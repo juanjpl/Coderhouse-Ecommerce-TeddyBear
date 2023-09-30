@@ -31,7 +31,7 @@ const ContactPage = () => {
   .required();
 
 const sumitHandler = async (values, { resetForm }) => {
-  // console.log(values);
+   console.log(values);
 
   // Add a new document with a generated id.
   const docRef = await addDoc(collection(db, "Message"), {
@@ -87,6 +87,7 @@ const sumitHandler = async (values, { resetForm }) => {
             resetForm,
           }) => (
             <form className="style-form" onSubmit={handleSubmit}>
+              <div className="container-name-last">
               <div className="container-input">
                 <label htmlFor="name" className="label">
                   Name:
@@ -120,6 +121,8 @@ const sumitHandler = async (values, { resetForm }) => {
                 />
                 <p className="comment">min 4 - max 10 characters</p>
               </div>
+              </div>
+           
 
               <div className="container-input">
                 <label htmlFor="email" className="label">
@@ -152,7 +155,7 @@ const sumitHandler = async (values, { resetForm }) => {
                   onChange={handleChange}
                   required
                 />
-                <p className="comment">Enter an email with its format</p>
+              
               </div>
 
               <div className="container-input">

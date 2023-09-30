@@ -17,34 +17,114 @@
 }
 
 .container-contact>.contact{
-    background-color: aqua;
+
     display: flex;
     flex-direction: row;
-    width: 80vw;
-    margin:auto;
-    border: 1px solid black;
+    width: 90vw;
+    margin:2em auto;
+
 }
 
 .contact>.form-contact{
     width: 60%;
-    background-color: red;
+
+  
 }
 
 .contact>.greeting{
     width: 40%;
-    background-color: rgb(242, 108, 108);
     display: flex;
 }
 
 .greeting>.option{
  
-  border: 1px solid black;
+
   width: 100%;
   margin: auto;
   
 }
 
+.greeting>.option>h2,
+.greeting>.option>.direction>h3{
+ 
+color:black;
 
-.form-contact{
-    border: 1px solid black;
+    
+  }
+
+
+.greeting>.option>.direction>h3{
+ 
+font-weight: 300;
+
+    
+  }
+
+
+.form-contact>form{
+
+    width: max-content;
+    height: max-content;
+    font-size: 16px;
+    color: #8f5d32;
+   
 }
+
+.container-name-last{
+  
+    display: flex;
+    flex-direction: row;
+}
+
+.container-name-last>.container-input,
+.form-contact>.style-form>.container-input{
+    padding:0 1em;
+
+}
+
+.container-name-last>.container-input>input{
+    padding:1em;
+    text-align: left;
+}
+
+.form-contact>.style-form>.container-input{
+
+   width:100%;
+}
+
+.form-contact>.style-form>.container-input>input{
+
+   width:100%;
+   padding:1em;
+   text-align: left;
+}
+
+.form-contact>.style-form>.container-input>textarea{
+
+    width:100%;
+    height: 150px;
+    padding:1em;
+    text-align: left;
+ }
+
+ .form-contact>.style-form>.container-input>button{
+
+    width:100%;
+    background-color: #8f5d32;
+    color: white;
+ 
+ }
+
+ .form-contact>.style-form>.container-input>button:disabled,
+ .form-contact>.style-form>.container-input>button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  border-radius: 0px;
+}
+
+ .container-input>label{
+    color:#8f5d32;
+    font-size: 20px;
+    font-weight: 800;
+ }
